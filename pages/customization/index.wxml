@@ -1,0 +1,49 @@
+<view style="display: flex; flex-direction:column; padding: 10px; margin-bottom: 10px;">
+  <view style="display:flex; flex-direction:row; padding: 10px;">
+    <view style="flex: 1;">
+      <text class="small-text" >安用 儿童安全座椅 定制</text>
+      <text class="big-text" >
+        选择部位,
+        个性配置,
+        定制你的风格。
+      </text>
+    </view>
+    <view style=" flex: 1;"></view>
+    <view style=" float: right;">
+      <text class="bigger-text">￥2899</text>
+    </view>
+  </view>
+  <view style="flex:1">
+    <swiper autoplay="true" interval="5000" circular="true" indicator-dots="true">
+      <swiper-item style="text-align: center;" wx:key="{{index}}" wx:for="{{imgUrls}}">
+        <image mode="aspectFit" src="{{item.url}}"/> 
+      </swiper-item>
+    </swiper>
+  </view> 
+  <view class="notice-box" wx:if="{{noticeList}}">
+    <swiper autoplay="{{ true }}" circular="{{ true }}" interval="5000">
+      <swiper-item wx:for="{{noticeList.dataList}}" wx:key="id" style="width: 400rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">
+        <van-notice-bar wx:if="{{noticeList}}" text="{{ item.title }}" background="0" data-id="{{ item.id }}" speed="10" bind:click="goNotice">
+          <image slot="left-icon" class="notice-icon" src="/images/home/notice.png"></image>
+        </van-notice-bar>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view style="float: left">
+    <van-grid clickable center="{{ true }}" border="{{ false }}" column-num="6" gutter="{{ 0 }}">
+      <van-grid-item icon="umbrella-circle" text="水洗" />
+      <van-grid-item icon="smile" text="亲肤" />
+      <van-grid-item icon="lock" text="安全" />
+      <van-grid-item icon="expand" text="360°" />
+      <van-grid-item icon="eye" text="0-4岁" />
+      <van-grid-item icon="smile-comment" text="易装" link-type="navigateTo" url="https://v.qq.com/x/page/n05049d7klz.html" />
+    </van-grid>
+  </view>
+  <view style="float:left; padding: 10px;">
+    <van-button class="click" bindtap="goCustom" type="primary" size="large" color="linear-gradient(to right, #c87d2f, #fa5151)">开启定制</van-button>
+  </view>
+</view>
+
+            
+
+            

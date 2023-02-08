@@ -1,0 +1,110 @@
+.display{
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.customizationtools {
+  width: 750rpx;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  background-color: CCC;
+}
+.customized-switch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: black;
+  height: 40px;
+  font-size: smaller;
+  background:#EFEFEF;
+  opacity: .9;
+}
+
+.customized-switch-list{
+  padding-left: 20px;
+  display: flex;
+  font-weight: bold;
+  width: 600rpx;
+}
+
+.customized-switch-item {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  margin: 12px;
+  opacity: .95;
+}
+
+.part-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: black;
+    font-weight: bold;
+    height: 58px;
+    background:#EEEEEE;
+    opacity: .9;
+}
+
+.part-switch-list{
+  padding-left: 20px;
+  display: flex;
+  width: 600rpx;
+}
+
+.part-switch-item {
+    height: 32px;
+    width: 48px;
+    margin: 6px;
+}
+.choose-information{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 24px;
+  color: black;
+  font-weight: bolder;
+  font-size: small;
+  background: #fefefe;
+  opacity: .9;
+}
+.addtocart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 48px;
+  font-weight: bold;
+  color: white;
+  background: #fa5151;
+  opacity: .9;
+}
+
+.help-page{
+  height:100%; 
+  width:100%;
+  position:fixed;
+  top:0px;
+  background:rgba(0,0,0,0.4);
+  overflow: hidden;
+  z-index: 100;
+  }
+.help-content{
+  width: 300px;
+  height: 350px;
+  position: fixed;
+  clear:both;
+  float:left;
+  text-align:left;
+  margin-left:76rpx;
+  border-radius: 16rpx;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.09);
+  margin-top: 200rpx;  
+  background: #fff;
+  }
+

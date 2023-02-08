@@ -1,0 +1,90 @@
+<cover-view style="position:fixed;margin-left: 10%;margin-top:{{menuButtonTop}}px;" >
+  <cover-image 
+      bindtap="onClickHide"
+      style="width:{{menuButtonHeight}}px;height:{{menuButtonHeight}}px;" 
+      src="{{ helpicon }}">
+  </cover-image>
+</cover-view>
+<cover-view class="help-page" hidden="{{show}}" bindtap="onClickShow">
+    <cover-view class="help-content"  >
+      <cover-image src="{{helppic}}" ></cover-image>
+    </cover-view>
+  </cover-view>
+
+<cover-view 
+    bindtap="showAR"   
+    style="position:fixed; margin-left: 80%;margin-top:{{menuButtonTop}}px;">
+    <cover-image 
+        style="width:{{menuButtonHeight}}px;height:{{menuButtonHeight}}px;" 
+        src="{{ aricon }}">
+    </cover-image>
+</cover-view>
+
+<canvas
+  class="display"
+  type="webgl"
+  id="webgl"
+  canvas-id="webgl"
+  style="height:{{canvasHeight}}px;width: {{canvasWidth}}px;"
+  disable-scroll = "true"
+  bindtouchstart="onTouchStart"
+  bindtouchmove="onTouchMove"
+  bindtouchend="onTouchEnd"
+  bindlongtap="onTouchTap"
+  bindtouchcancel="onTouchCancel"
+  ></canvas>
+
+<cover-view class="customizationtools">
+  <cover-view class="customized-switch">
+    <cover-view class="customized-name">
+      颜色
+    </cover-view>
+    <cover-view class="customized-switch-list">
+      <cover-view class="customized-switch-item" style="background:{{colorlist[0].color}}" data-name="{{colorlist[0].cname}}" data-color="{{colorlist[0].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[1].color}}" data-name="{{colorlist[1].cname}}" data-color="{{colorlist[1].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[2].color}}" data-name="{{colorlist[2].cname}}" data-color="{{colorlist[2].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[3].color}}" data-name="{{colorlist[3].cname}}" data-color="{{colorlist[3].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[4].color}}" data-name="{{colorlist[4].cname}}" data-color="{{colorlist[4].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[5].color}}" data-name="{{colorlist[5].cname}}" data-color="{{colorlist[5].color}}" bindtap="updateColor">
+      </cover-view>
+      <cover-view class="customized-switch-item" style="background:{{colorlist[6].color}}" data-name="{{colorlist[6].cname}}" data-color="{{colorlist[6].color}}" bindtap="updateColor">
+      </cover-view>
+    </cover-view>
+  </cover-view>
+  <cover-view class="part-switch">
+    <cover-view class="part-name">
+      部位
+    </cover-view>
+    <cover-view class="part-switch-list">
+      <cover-view class="part-switch-item" data-part="head" data-id="头" bindtap = "changeModel">
+        <cover-image src="{{head}}"></cover-image>
+      </cover-view>
+      <cover-view class="part-switch-item" data-part="insider" data-id="内衬" bindtap = "changeModel">
+        <cover-image src="{{insider}}"></cover-image>
+      </cover-view>
+      <cover-view class="part-switch-item" data-part="lock" data-id="锁扣" bindtap="changeModel">
+        <cover-image src="{{lock}}"></cover-image>
+      </cover-view>
+      <cover-view class="part-switch-item" data-part="strip" data-id="肩带" bindtap = "changeModel">
+        <cover-image src="{{strip}}"></cover-image>
+      </cover-view>
+      <cover-view class="part-switch-item" data-part="base" data-id="基座" bindtap = "changeModel">
+        <cover-image src="{{base}}"></cover-image>
+      </cover-view>
+      <cover-view class="part-switch-item" data-part="backbone" data-id="后背" bindtap = "changeModel">
+        <cover-image src="{{backbone}}"></cover-image>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+  <cover-view class="choose-information">
+      {{colorname}}
+  </cover-view>
+  <cover-view class="addtocart" bindtap="addtocart" >
+    添加至购物车
+  </cover-view>
+</cover-view>

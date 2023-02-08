@@ -1,0 +1,36 @@
+swiper{
+  width:100%;
+  height:calc(70vw*580/580);
+}
+
+.small-text{
+  font-size:0.5em;
+  font-weight:lighter;  
+}
+.big-text{
+  font-size:1em;
+  font-weight:bold;
+}
+.bigger-text{
+  font-size:1.5em;
+  font-weight:bolder;
+  float: right;
+}
+
+.notice-box{
+  display: flex;
+  height: 70rpx;
+  width: 400rpx;
+  position: fixed;
+  border: none;
+  bottom: 80%;
+  margin-right: 0;
+  right:0;
+  z-index: 2;
+}
+.notice-icon {
+  width: 130rpx;
+  height: 33rpx;
+  margin-right: 10px;
+}
+
